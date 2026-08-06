@@ -5,8 +5,8 @@ import random
 import time
 
 # === ТОКЕНЫ (их даст Render) ===
-TOKEN = os.getenv("8628199290:AAFZOxkAbtj3898HOq861JMR0dPI5-1ajIQ")
-GEMINI_KEY = os.getenv("AQ.Ab8RN6LNOJTva48Ga6r3VJ7oqNTeZkavtMce3teZn8YfvDWDag")
+TOKEN = os.getenv("TELEGRAM_TOKEN")
+GEMINI_KEY = os.getenv("GEMINI_KEY")
 
 if not TOKEN or not GEMINI_KEY:
     raise ValueError("❌ Токены не найдены. Добавь их в Render.")
