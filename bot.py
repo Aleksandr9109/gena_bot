@@ -84,3 +84,5 @@ def handle_all_messages(message):
 
 print("✅ Бот Гена активирован (группы + личка)")
 bot.infinity_polling()
+for m in genai.list_models():
+    print(m.name)
