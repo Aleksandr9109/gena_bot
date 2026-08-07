@@ -12,8 +12,7 @@ if not TOKEN or not GEMINI_KEY:
     raise ValueError("❌ Токены не найдены. Добавь их в Render.")
 
 genai.configure(api_key=GEMINI_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
-
+model = genai.GenerativeModel("gemini-2.0-flash-exp")
 bot = telebot.TeleBot(TOKEN)
 
 # Хранилище памяти (отдельно для каждого чата)
